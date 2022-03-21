@@ -13,6 +13,7 @@ function App() {
      <ImageSlider slides={SliderData}/>
      <FirstContent/>
      <SecondContent/>
+     <h3>Hello world</h3>
     </div>
   );
 }
