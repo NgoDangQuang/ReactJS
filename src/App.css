@@ -1,38 +1,239 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul,
+ol {
+    list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -6px;
+    margin-right: -6px;
 }
 
-.App-link {
-  color: #61dafb;
+.row div[class^="col-"] {
+    padding: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 320px) {
+    .row .col-1 {
+        width: 8.33333%;
+    }
+    .row .col-2 {
+        width: 16.66667%;
+    }
+    .row .col-3 {
+        width: 25%;
+    }
+    .row .col-4 {
+        width: 33.33333%;
+    }
+    .row .col-5 {
+        width: 41.66667%;
+    }
+    .row .col-6 {
+        width: 50%;
+    }
+    .row .col-7 {
+        width: 58.33333%;
+    }
+    .row .col-8 {
+        width: 66.66667%;
+    }
+    .row .col-9 {
+        width: 75%;
+    }
+    .row .col-10 {
+        width: 83.33333%;
+    }
+    .row .col-11 {
+        width: 91.66667%;
+    }
+    .row .col-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .row .col-sm-1 {
+        width: 8.33333%;
+    }
+    .row .col-sm-2 {
+        width: 16.66667%;
+    }
+    .row .col-sm-3 {
+        width: 25%;
+    }
+    .row .col-sm-4 {
+        width: 33.33333%;
+    }
+    .row .col-sm-5 {
+        width: 41.66667%;
+    }
+    .row .col-sm-6 {
+        width: 50%;
+    }
+    .row .col-sm-7 {
+        width: 58.33333%;
+    }
+    .row .col-sm-8 {
+        width: 66.66667%;
+    }
+    .row .col-sm-9 {
+        width: 75%;
+    }
+    .row .col-sm-10 {
+        width: 83.33333%;
+    }
+    .row .col-sm-11 {
+        width: 91.66667%;
+    }
+    .row .col-sm-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .row .col-md-1 {
+        width: 8.33333%;
+    }
+    .row .col-md-2 {
+        width: 16.66667%;
+    }
+    .row .col-md-3 {
+        width: 25%;
+    }
+    .row .col-md-4 {
+        width: 33.33333%;
+    }
+    .row .col-md-5 {
+        width: 41.66667%;
+    }
+    .row .col-md-6 {
+        width: 50%;
+    }
+    .row .col-md-7 {
+        width: 58.33333%;
+    }
+    .row .col-md-8 {
+        width: 66.66667%;
+    }
+    .row .col-md-9 {
+        width: 75%;
+    }
+    .row .col-md-10 {
+        width: 83.33333%;
+    }
+    .row .col-md-11 {
+        width: 91.66667%;
+    }
+    .row .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .row .col-lg-1 {
+        width: 8.33333%;
+    }
+    .row .col-lg-2 {
+        width: 16.66667%;
+    }
+    .row .col-lg-3 {
+        width: 25%;
+    }
+    .row .col-lg-4 {
+        width: 33.33333%;
+    }
+    .row .col-lg-5 {
+        width: 41.66667%;
+    }
+    .row .col-lg-6 {
+        width: 50%;
+    }
+    .row .col-lg-7 {
+        width: 58.33333%;
+    }
+    .row .col-lg-8 {
+        width: 66.66667%;
+    }
+    .row .col-lg-9 {
+        width: 75%;
+    }
+    .row .col-lg-10 {
+        width: 83.33333%;
+    }
+    .row .col-lg-11 {
+        width: 91.66667%;
+    }
+    .row .col-lg-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .row .col-xl-1 {
+        width: 8.33333%;
+    }
+    .row .col-xl-2 {
+        width: 16.66667%;
+    }
+    .row .col-xl-3 {
+        width: 25%;
+    }
+    .row .col-xl-4 {
+        width: 33.33333%;
+    }
+    .row .col-xl-5 {
+        width: 41.66667%;
+    }
+    .row .col-xl-6 {
+        width: 50%;
+    }
+    .row .col-xl-7 {
+        width: 58.33333%;
+    }
+    .row .col-xl-8 {
+        width: 66.66667%;
+    }
+    .row .col-xl-9 {
+        width: 75%;
+    }
+    .row .col-xl-10 {
+        width: 83.33333%;
+    }
+    .row .col-xl-11 {
+        width: 91.66667%;
+    }
+    .row .col-xl-12 {
+        width: 100%;
+    }
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    /* color: #666666; */
+}
+body{
+    background-color: white;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
 }

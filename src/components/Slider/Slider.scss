@@ -1,0 +1,84 @@
+$primary: #ff324d;
+$font-color: #333333;
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .right-arrow {
+        position: absolute;
+        top: 50%;
+        right: 32px;
+        font-size: 50px;
+        color: rgb(219, 148, 148);
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+        &:hover{
+            color: rgb(211, 124, 124);;
+            transition: color 0.1s linear;
+        }
+    }
+    .left-arrow {
+        position: absolute;
+        top: 50%;
+        left: 32px;
+        font-size: 50px;
+        color: rgb(219, 148, 148);
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+        &:hover{
+            color: rgb(211, 124, 124);;
+            transition: color 0.1s linear;
+        }
+    }
+    .slide {
+        opacity: 0;
+        transition-duration: 2s ease;
+    }
+    .slide.active {
+        opacity: 1;
+        transition-duration: 2s;
+    }
+    .btn {
+        position: relative;
+        .image {
+            width: 100%;
+        }
+        .container {
+            .btn-content {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                p {
+                    color: $font-color;
+                    font-size: 20px;
+                }
+                h2 {
+                    font-size: 60px;
+                    margin-bottom: 30px;
+                    color: $font-color;
+                }
+                span {
+                    background-color: $primary;
+                    color: white;
+                    padding: 12px 30px;
+                    border-radius: 2px;
+                    text-transform: uppercase;
+                    border: 1px solid $primary;
+                    font-weight: 500;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgba(0,0,0,0);
+                        color: $primary;
+                        border: 1px solid $primary;
+                        transition: 0.3s ease-in;
+                    }
+                }
+            }
+        }
+    }
+}

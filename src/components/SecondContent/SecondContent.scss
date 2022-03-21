@@ -1,0 +1,129 @@
+$primary: #ff324d;
+$font-color: #333333;
+$box-shadow: #afacac8a;
+$bg-saleoff: #28a745;
+$star: #f6bc3e;
+.title__content {
+    text-align: center;
+    h2 {
+        font-size: 30px;
+    }
+    &-type {
+        display: flex;
+        justify-content: center;
+        h3 {
+            padding: 40px 20px;
+            font-weight: 500;
+            cursor: pointer;
+            &:hover {
+                color: $primary;
+                transition: color 0.2s linear;
+            }
+        }
+    }
+}
+.row {
+    .list-item {
+        padding: 10px;
+        .item {
+            box-shadow: 0px 0px 3px $box-shadow;
+            position: relative;
+            .image {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                p {
+                    position: absolute;
+                    top: 0;
+                    margin: 10px;
+                    padding: 0 5px;
+                    background-color: $bg-saleoff;
+                    color: white;
+                    border-radius: 2px;
+                }
+                .overplay {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.1);
+                    opacity: 0;
+                    color: white;
+                    border-radius: 2px;
+                }
+                .icons {
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    justify-content: center;
+                    opacity: 0;
+                    .icon {
+                        background-color: rgba(255, 255, 255, 0.89);
+                        width: 40px;
+                        height: 40px;
+                        padding: 10px;
+                        margin-right: 10px;
+                        color: $font-color;
+                        &:hover {
+                            color: white;
+                            background-color: $primary;
+                            transition: 0.3s linear;
+                        }
+                    }
+                }
+            }
+            &-info {
+                padding: 15px;
+                h4 {
+                    font-weight: 500;
+                    font-size: 18px;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                .price {
+                    margin-right: 10px;
+                    color: $font-color;
+                    text-decoration: line-through 1px $font-color;
+                    font-size: 18px;
+                }
+                .discount {
+                    display: inline-block;
+                    font-size: 18px;
+                    color: $primary;
+                    font-weight: bold;
+                    padding: 5px 0px;
+                }
+                .rating {
+                    display: flex;
+                    align-items: center;
+                    .star {
+                        color: $star;
+                        font-size: 18px;
+                    }
+                    .count {
+                        text-align: start;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            &:hover {
+                .overplay {
+                    opacity: 1;
+                    transition: 0.2s linear;
+                }
+                .icons {
+                    opacity: 1;
+                    transition: 0.4s linear;
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
