@@ -4,8 +4,8 @@ import ImageSlider from './components/Slider/ImageSlider.js';
 import { SliderData } from './components/Slider/SliderData.js';
 import FirstContent from './components/FirstContent/FirstContent.js';
 import SecondContent from './components/SecondContent/SecondContent.js';
-
-
+import ThirdContent from './components/ThirdContent/ThirdContent.js';
+import Footer from './components/Footer/Footer.js';
 function App() {
   return (
     <div>
@@ -13,7 +13,8 @@ function App() {
      <ImageSlider slides={SliderData}/>
      <FirstContent/>
      <SecondContent/>
-     <h3>Hello world</h3>
+     <ThirdContent/>
+     <Footer/>
     </div>
   );
 }

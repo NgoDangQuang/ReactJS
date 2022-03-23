@@ -1,43 +1,43 @@
 $primary: #ff324d;
 $font-color: #333333;
 
-.contain{
+.contain {
     width: 100%;
     margin: 100px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .item-contain{
+    .item-contain {
         position: relative;
         width: 48%;
-        img{
+        img {
             width: 100%;
         }
-        &-info{
+        &-info {
             position: absolute;
-            top:50%;
+            top: 50%;
             right: 45%;
-            transform: translate(100%,-50%);
-            p{
+            transform: translate(100%, -50%);
+            p {
                 font-size: 24px;
                 font-weight: 500;
                 color: $font-color;
             }
-            h2{
+            h2 {
                 font-size: 30px;
                 color: $font-color;
                 margin-bottom: 20px;
             }
-            span{
+            span {
                 color: $font-color;
                 padding: 8px 16px;
                 border: 1px solid $primary;
                 border-radius: 5px;
                 font-weight: bold;
-                &:hover{
+                &:hover {
                     background: $primary;
                     border: 1px solid white;
-                    color:white;
+                    color: white;
                     transition: 0.25s linear;
                 }
             }

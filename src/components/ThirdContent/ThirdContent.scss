@@ -1,0 +1,56 @@
+$primary: #ff324d;
+$font-color: #333333;
+$bg-color: #ebf5ff;
+.third-content {
+    background-color: $bg-color;
+    height: 400px;
+    overflow: visible;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-items: flex-end;
+        height: 100%;
+        .content {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .info {
+                p {
+                    color: $primary;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                h3 {
+                    font-size: 36px;
+                    margin-bottom: 15px;
+                    color: $font-color;
+                }
+                h4 {
+                    font-size: 22px;
+                    color: $font-color;
+                    margin-bottom: 35px;
+                }
+                .shop {
+                    border: 1px solid $primary;
+                    display: inline-flex;
+                    span {
+                        background-color: $primary;
+                        padding: 15px 40px;
+                        color: white;
+                        border: 1px solid white;
+                        border-bottom: 1px solid $primary;
+                        font-weight: bold;
+                        transition: all 0.25s linear;
+                        &:hover {
+                            color: $primary;
+                            background-color: white;
+                            border: 1px solid $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

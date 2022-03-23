@@ -87,14 +87,14 @@ export const BestSellersData = [
 
 export const FeaturedData = [
     {
-        image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img1-1.jpg',
+        image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img5-1.jpg',
         alt:'item-image',
-        saleoff:'-40%',
-        name:'Blue Dress For Woman',
-        price:'$65.00',
-        discount:'$39.00',
-        rating:[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiOutlineStar/>,<AiOutlineStar/>,],
-        count: '(89)'
+        saleoff:'50%',
+        name:'Elegant Dress For Woman',
+        price:'$50.00',
+        discount:'$25.00',
+        rating:[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,],
+        count: '(45)'
     },
     {
         image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img2-1.jpg',
@@ -107,14 +107,14 @@ export const FeaturedData = [
         count: '(45)'
     },
     {
-        image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img5-1.jpg',
+        image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img1-1.jpg',
         alt:'item-image',
-        saleoff:'50%',
-        name:'Elegant Dress For Woman',
-        price:'$50.00',
-        discount:'$25.00',
-        rating:[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,],
-        count: '(45)'
+        saleoff:'-40%',
+        name:'Blue Dress For Woman',
+        price:'$65.00',
+        discount:'$39.00',
+        rating:[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiOutlineStar/>,<AiOutlineStar/>,],
+        count: '(89)'
     },
     {
         image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img6-1.jpg',
@@ -167,7 +167,21 @@ export const FeaturedData = [
         count: '(12)'
     },
 ]
+
+
+
+
 export const NewArrivalData = [
+    {
+        image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img8-1.jpg',
+        alt:'item-image',
+        saleoff:'-23%',
+        name:'Man Blue Jins Shirt',
+        price:'$89.00',
+        discount:'$69.00',
+        rating:[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiOutlineStar/>,<AiOutlineStar/>,],
+        count: '(30)'
+    },
     {
         image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img1-1.jpg',
         alt:'item-image',
@@ -197,16 +211,6 @@ export const NewArrivalData = [
         discount:'$69.00',
         rating:[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiOutlineStar/>,],
         count: '(56)'
-    },
-    {
-        image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img8-1.jpg',
-        alt:'item-image',
-        saleoff:'-23%',
-        name:'Man Blue Jins Shirt',
-        price:'$89.00',
-        discount:'$69.00',
-        rating:[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiOutlineStar/>,<AiOutlineStar/>,],
-        count: '(30)'
     },
     {
         image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img9-1.jpg',
@@ -249,7 +253,22 @@ export const NewArrivalData = [
         count: '(12)'
     },
 ]
+
+
+
+
+
 export const SpecialOfferData = [
+    {
+        image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img9-1.jpg',
+        alt:'item-image',
+        saleoff:'-19%',
+        name:'T-Shirt Form Girls',
+        price:'$55.00',
+        discount:'$45.00',
+        rating:[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiOutlineStar/>,<AiOutlineStar/>,],
+        count: '(28)'
+    },
     {
         image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img2-1.jpg',
         alt:'item-image',
@@ -299,16 +318,6 @@ export const SpecialOfferData = [
         discount:'$55.00',
         rating:[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,],
         count: '(55)'
-    },
-    {
-        image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img9-1.jpg',
-        alt:'item-image',
-        saleoff:'-19%',
-        name:'T-Shirt Form Girls',
-        price:'$55.00',
-        discount:'$45.00',
-        rating:[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiOutlineStar/>,<AiOutlineStar/>,],
-        count: '(28)'
     },
     {
         image:'https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/04/product_img11-1.jpg',
