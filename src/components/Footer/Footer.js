@@ -56,7 +56,7 @@ export default function Footer() {
                         </div>
                         <div className='info col-sm-12 col-md-4 col-lg-3'>
                             <h3>Contact Info</h3>
-                            <div className='content'>
+                            <div className='info-content'>
                                 <div className='icon'>
                                     <FaMapMarkerAlt />
                                 </div>
@@ -64,7 +64,7 @@ export default function Footer() {
                                     123 Street, Old Trafford, New South London, UK
                                 </p>
                             </div>
-                            <div className='content'>
+                            <div className='info-content'>
                                 <div className='icon'>
                                     <FiMail className='icon' />
                                 </div>
@@ -72,7 +72,7 @@ export default function Footer() {
                                     info@shopwise.com
                                 </p>
                             </div>
-                            <div className='content'>
+                            <div className='info-content'>
                                 <div className='icon'>
                                     <GiSmartphone className='icon' />
                                 </div>

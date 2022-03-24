@@ -57,15 +57,14 @@ export default function SecondContent() {
                                         <span className='discount'>{item.discount}</span>
                                         <br />
                                         <div className='rating'>
-                                            <span className='star'>{item.rating}</span>
+                                            <span className='star' key={index}>{item.rating}</span>
                                             <span className='count'>{item.count}</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         )
-                    }
-                    )}
+                    })}
                 </div>
             </div>
         </div>

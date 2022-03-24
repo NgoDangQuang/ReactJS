@@ -1,0 +1,66 @@
+$bg-color: #f7f8fb;
+$primary: #ff324d;
+$font-color: #333333;
+$bg-icons-color: #f0f0f0;
+.second-content {
+    background-color: $bg-color;
+    padding: 100px 0px;
+    .container {
+        .title {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            h2 {
+                font-size: 34px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 18px;
+                color: $font-color;
+                margin-bottom: 50px;
+            }
+        }
+        .row {
+            .items {
+                .item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding: 25px;
+                    background-color: white;
+                    margin: 15px;
+                    border: 5px solid $bg-icons-color;
+                    transition: all 0.4s ease-in-out;
+                    .icons {
+                        background-color: $bg-icons-color;
+                        font-size: 30px;
+                        padding: 15px 20px;
+                        border-radius: 100%;
+                        transition: all 0.4s ease-in-out;
+                        margin-right: 20px;
+                    }
+                    &-content {
+                        h3 {
+                            font-size: 22px;
+                            font-weight: 600;
+                            color: $font-color;
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            color: $font-color;
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+                    }
+                    &:hover {
+                        border: 5px solid $primary;
+                        .icons {
+                            color: white;
+                            background-color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

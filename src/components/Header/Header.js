@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './Header.scss'
 export default function Header() {
     return (
@@ -7,17 +8,17 @@ export default function Header() {
                 <div className="header__inner">
                     <div className="logo"><img src="https://klbtheme.com/shopwise/fashion/wp-content/uploads/2020/05/logo2.png" alt=""></img></div>
                     <ul className="menu">
-                        <li className="menu__item"><a href="" className="menu__link">Home</a></li>
+                        <li className="menu__item"><Link to="/ReactJS" className="menu__link">Home</Link></li>
                         <li className="menu__item"><a href="" className="menu__link">Pages<i className="fa-solid fa-angle-down"></i></a>
                             <div className="pages">
                                 <ul>
-                                    <li><a href='#'>About Us</a></li>
-                                    <li><a href='#'>Contact Us</a></li>
-                                    <li><a href='#'>Faq</a></li>
-                                    <li><a href='#'>Team And Conditions</a></li>
-                                    <li><a href='#'>404 Error Page</a></li>
-                                    <li><a href='#'>Login</a></li>
-                                    <li><a href='#'>Register</a></li>
+                                    <li><Link to='/about'>About Us</Link></li>
+                                    <li><Link to='/contact'>Contact Us</Link></li>
+                                    <li><Link to='/faq'>Faq</Link></li>
+                                    <li><Link to='#'>Team And Conditions</Link></li>
+                                    <li><Link to='#'>404 Error Page</Link></li>
+                                    <li><Link to='#'>Login</Link></li>
+                                    <li><Link to='#'>Register</Link></li>
                                 </ul>
                             </div>
                         </li>

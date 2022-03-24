@@ -6,6 +6,11 @@ $box-shadow: #afacac;
     background-color: white;
     margin: 0 auto;
     padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     .header__inner {
         padding-left: 20px;
         display: flex;
@@ -13,8 +18,8 @@ $box-shadow: #afacac;
         position: relative;
         .logo {
             img {
-                width: 150px;
-                padding: 10px;
+                width: 180px;
+                padding: 12px;
             }
         }
         .logo:hover {
@@ -30,9 +35,9 @@ $box-shadow: #afacac;
             .menu__link {
                 color: $font-color;
                 text-transform: uppercase;
-                font-size: 14px;
+                font-size: 15px;
                 display: block;
-                padding: 15px 15px;
+                padding: 15px 10px;
                 font-weight: 500;
                 i{
                     margin-left: 5px;
