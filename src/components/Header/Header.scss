@@ -1,21 +1,44 @@
-$primary: #ff324d;
-$font-color: #333333;
-$box-shadow: #afacac;
+@import '../Root/Reset.scss';
+@import '../Root/Grid.scss';
+@import '../Root/Variable.scss';
+@import '../Root/Media.scss';
 
+.flex{
+    display: flex;
+    align-items: center;
+}
+.jCenter{
+    justify-content: center;
+}
+.jSpaceBetween{
+    justify-content: space-between;
+}
 .header {
     background-color: white;
     margin: 0 auto;
-    padding-bottom: 10px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    .header__inner {
-        padding-left: 20px;
+    .header__container{
+        width: 1200px;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
         position: relative;
+        justify-content: space-between;
+        @include rs-xs {
+            max-width: 97%;
+        }
+        @include rs-sm{
+            max-width: 97%;
+        }
+        @include rs-md{
+            max-width: 95%;                  
+        }
+        @include rs-lg{
+            max-width: 95%;
+        }
         .logo {
             img {
                 width: 180px;
@@ -24,6 +47,14 @@ $box-shadow: #afacac;
         }
         .logo:hover {
             cursor: pointer;
+        }
+    }
+    #menu {
+        display: none;
+        &:checked {
+            ~ul {
+                display: block;
+            }
         }
     }
     .menu {
@@ -39,18 +70,18 @@ $box-shadow: #afacac;
                 display: block;
                 padding: 15px 10px;
                 font-weight: 500;
-                i{
+                i {
                     margin-left: 5px;
                 }
             }
             .menu__link:hover {
                 color: $primary;
                 transition: 0.2s linear;
-                i{
+                i {
                     color: $primary
                 }
             }
-            .pages{
+            .pages {
                 position: absolute;
                 background-color: #fff;
                 transition: 0.25s linear;
@@ -59,15 +90,15 @@ $box-shadow: #afacac;
                 opacity: 0;
                 visibility: hidden;
                 z-index: 20;
-                ul{
+                ul {
                     padding: 10px 0px;
-                    li{
+                    li {
                         padding: 8px 20px;
-                        a{
+                        a {
                             display: block;
                         }
-                        &:hover{
-                            a{
+                        &:hover {
+                            a {
                                 color: $primary
                             }
                         }
@@ -78,7 +109,7 @@ $box-shadow: #afacac;
                 position: absolute;
                 top: 100%;
                 left: 0;
-                width: 100%;
+                width: 1200px;
                 background-color: #fff;
                 font-size: 14px;
                 opacity: 0;
@@ -93,7 +124,7 @@ $box-shadow: #afacac;
                         width: 25%;
                         padding: 10px 0px;
                         li {
-                            padding: 10px 25px;
+                            padding: 8px 25px;
                             border-left: 1px solid rgb(216, 210, 210);
                             color: $font-color;
                         }
@@ -109,63 +140,63 @@ $box-shadow: #afacac;
                             }
                         }
                     }
-                    .ad-banner{
+                    .ad-banner {
                         border-left: 1px solid rgb(216, 210, 210);
                         padding: 10px 20px;
                         position: relative;
-                        .image{
+                        .image {
                             position: relative;
-                            img{
-                                width: 90%;
+                            img {
+                                width: 80%;
                             }
-                            .blur{
+                            .blur {
                                 position: absolute;
                                 top: 0;
                                 bottom: 0;
                                 left: 0;
-                                right: 10%;
+                                right: 20%;
                                 background-color: black;
                                 background: rgba(0, 0, 0, .4);
                             }
                         }
-                        .banner-info{
+                        .banner-info {
                             position: absolute;
                             top: 40%;
                             left: 50%;
                             transform: translateX(-60%);
-                            h3{
+                            h3 {
                                 color: white;
                                 font-size: 18px;
                             }
-                            p{
+                            p {
                                 color: white;
                                 font-size: 26px;
                                 font-weight: bold;
                                 margin-bottom: 25px;
                                 margin-top: 5px;
                             }
-                            span{
+                            span {
                                 color: $font-color;
                                 background-color: white;
                                 padding: 8px 16px;
-                                &:hover{
-                                    background: rgba(0,0,0,0);
+                                &:hover {
+                                    background: rgba(0, 0, 0, 0);
                                     border: 1px solid white;
-                                    color:white;
+                                    color: white;
                                     transition: 0.25s linear;
                                 }
                             }
                         }
                     }
                 }
-                .menu__child-banner {
+                .menu__child__banner {
                     display: flex;
                     justify-content: space-between;
                     padding: 20px 10px;
-                    .menu__child-banner-item {
+                    .menu__child__banner__item {
                         margin: 0 10px;
                         position: relative;
-                        .banner-info {
+                        .banner__info {
                             position: absolute;
                             top: 0;
                             right: 20px;
@@ -187,23 +218,26 @@ $box-shadow: #afacac;
                                 padding: 8px 16px;
                                 border-radius: 5px;
                                 cursor: pointer;
-                                &:hover{
+                                &:hover {
                                     background-color: $primary;
                                     color: white;
                                     transition: 0.2s linear;
                                 }
                             }
                         }
+                        &:hover{
+                            border: 1px solid red;
+                        }
                     }
                 }
             }
         }
-        .menu__item:hover .menu__child{
+        .menu__item:hover .menu__child {
             opacity: 1;
             visibility: visible;
             cursor: pointer;
         }
-        .menu__item:hover .pages{
+        .menu__item:hover .pages {
             opacity: 1;
             visibility: visible;
             cursor: pointer;

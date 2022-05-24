@@ -6,10 +6,11 @@ $font-color: #333333;
     margin: 100px 0px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     .item-contain {
         position: relative;
         width: 48%;
+        height: 320px;
         img {
             width: 100%;
         }
@@ -40,6 +41,15 @@ $font-color: #333333;
                     color: white;
                     transition: 0.25s linear;
                 }
+            }
+        }
+        &:hover{
+            width: 48%;
+            height: 320px;
+            overflow: hidden;
+            img{
+                transition: all 0.3s linear;
+                width: 105%;
             }
         }
     }

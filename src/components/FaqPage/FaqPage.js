@@ -1,6 +1,6 @@
-import React from 'react'
 import { AiOutlineRight } from 'react-icons/ai'
 import { GoPlus } from 'react-icons/go'
+import {HiMinus} from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 import { GeneralFaq, OtherFaq } from './FaqData'
 import './FaqPage.scss'
@@ -23,11 +23,13 @@ export default function FaqPage() {
                         <h2>General Questions</h2>
                         {GeneralFaq.map((data, index) => {
                             return (
-                                <div className='item-ans'>
-                                    <div className='title d-flex'>
+                                <div className='item-ans' key={index}>
+                                    <input type='checkbox' id={data.id} />
+                                    <label className='title d-flex' htmlFor={data.id}>
                                         <h3>{data.question}</h3>
-                                        <GoPlus />
-                                    </div>
+                                        <GoPlus className='plus'/>
+                                        <HiMinus className='minus'/>
+                                    </label>                                    
                                     <p>{data.answer}</p>
                                 </div>
                             )
@@ -37,11 +39,13 @@ export default function FaqPage() {
                         <h2>Other Questions</h2>
                         {OtherFaq.map((data, index) => {
                             return (
-                                <div className='item-ans'>
-                                    <div className='title d-flex'>
+                                <div className='item-ans' key={index}>
+                                    <input type='checkbox' id={data.id} />
+                                    <label className='title d-flex' htmlFor={data.id}>
                                         <h3>{data.question}</h3>
-                                        <GoPlus />
-                                    </div>
+                                        <GoPlus className='plus'/>
+                                        <HiMinus className='minus'/>
+                                    </label>                                    
                                     <p>{data.answer}</p>
                                 </div>
                             )

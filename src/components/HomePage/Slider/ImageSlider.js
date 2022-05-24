@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { SliderData } from './SliderData.js'
-import { AiOutlineRightCircle, AiOutlineLeftCircle } from 'react-icons/ai'
+import { FaChevronRight, FaChevronLeft } from 'react-icons/fa'
 import './Slider.scss'
 
 export default function ImageSlider({ slides }) {
@@ -20,8 +20,8 @@ export default function ImageSlider({ slides }) {
     console.log(current)
     return (
         <section className='slider'>
-            <AiOutlineLeftCircle className='left-arrow' onClick={prevSlide} />
-            <AiOutlineRightCircle className='right-arrow' onClick={nextSlide} />
+            <FaChevronLeft className='left arrow' onClick={prevSlide} />
+            <FaChevronRight className='right arrow' onClick={nextSlide} />
             {SliderData.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slide active' : 'slide'} key={index}>

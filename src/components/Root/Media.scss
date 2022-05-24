@@ -1,0 +1,31 @@
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@mixin rs-xs{
+    @media (min-width: $xs){
+        @content;
+    }
+}
+@mixin rs-sm{
+    @media (min-width: $sm){
+        @content;
+    }
+}
+@mixin rs-md{
+    @media (min-width: $md){
+        @content;
+    }
+}
+@mixin rs-lg{
+    @media (min-width: $lg){
+        @content;
+    }
+}
+@mixin rs-xl{
+    @media (min-width: $xl){
+        @content;
+    }
+}

@@ -55,11 +55,15 @@ $under-line-color: #dfdfdf;
             }
             .item-ans {
                 width: 100%;
-                .title{
+                .title {
+                    position: relative;
                     border-bottom: 1px solid $under-line-color;
                     h3 {
                         margin-top: 15px;
                         padding-bottom: 15px;
+                    }
+                    .minus {
+                        display: none;
                     }
                 }
                 p {
@@ -68,6 +72,23 @@ $under-line-color: #dfdfdf;
                     font-size: 18px;
                     margin-top: 15px;
                     visibility: hidden;
+                }
+                @for $i from 1 through 10 {
+                    #id-#{$i} {
+                        display: none;
+                    }
+                    #id-#{$i}:checked ~ p {
+                        visibility:visible;
+                        display: block;
+                    }
+                    #id-#{$i}:checked ~.title{
+                        .minus{
+                            display: block;
+                        }
+                        .plus{
+                            display:none;
+                        }
+                    }
                 }
             }
         }

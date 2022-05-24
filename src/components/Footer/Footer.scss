@@ -1,6 +1,6 @@
 $primary: #FF324D;
 $button-sign-up: #343A40;
-$bgc: #202325;
+$bg-footer-color: #202325;
 .footer{
     .subscribe{
         padding: 60px 0px;
@@ -39,7 +39,7 @@ $bgc: #202325;
     }
     .information{
         padding: 80px 0px;
-        background-color: $bgc;
+        background-color: $bg-footer-color;
         color: white;
         border-bottom: 1px solid #37393B;
         .container{
@@ -97,7 +97,7 @@ $bgc: #202325;
         }
     }
     .copyright{
-        background-color: $bgc;
+        background-color: $bg-footer-color;
         color: white;
         padding: 30px;
         .container{
@@ -110,6 +110,22 @@ $bgc: #202325;
             img{
                 margin-left: 5px;
             }
+        }
+    }
+    .btn-top{
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        padding: 6px 8px;
+        background-color: $button-sign-up;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border: none;
+        border-radius: 3px;
+        &:hover{
+            background-color: $primary;
         }
     }
 }

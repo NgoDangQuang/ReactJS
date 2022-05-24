@@ -1,10 +1,33 @@
-import React from 'react'
+import {useState, useEffect} from 'react'
 import './Footer.scss'
 import { FaFacebookF, FaTwitter, FaGooglePlusG, FaYoutube, FaInstagram, FaMapMarkerAlt }
     from 'react-icons/fa'
 import { FiMail } from 'react-icons/fi'
 import { GiSmartphone } from 'react-icons/gi'
+import {BsCaretUpFill} from 'react-icons/bs'
 export default function Footer() {
+    const [showGoToTop, setShowGoToTop] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY >= 200) {
+                setShowGoToTop(true)
+            }
+            else {
+                setShowGoToTop(false)
+            }
+        }
+        window.addEventListener('scroll', handleScroll)
+
+        // Cleanup function
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
+    const handleClick = ()=>{
+        window.scrollTo(0,0)
+    }
     return (
         <div className='footer'>
             <div className='subscribe'>
@@ -96,6 +119,14 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+            {showGoToTop && (
+                <button
+                    onClick={handleClick}
+                    className='btn-top'
+                >
+                    <BsCaretUpFill className='gototop'/>
+                </button>
+            )}
         </div>
     )
 }

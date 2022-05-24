@@ -1,0 +1,22 @@
+
+$font-color: #333333;
+$under-line-color: #dfdfdf;
+
+.term-content{
+    padding: 100px 0px;
+    .container{
+        .item{
+            border-bottom: 1px solid $under-line-color;
+            margin-bottom: 20px;
+            color: $font-color;
+            h2{
+                margin-bottom: 20px;
+            }
+            p{
+                line-height: 32px;
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

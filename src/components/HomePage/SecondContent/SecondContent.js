@@ -1,15 +1,12 @@
 import { useState } from 'react'
-import { BestSellersData, FeaturedData, NewArrivalData, SpecialOfferData } from './SecondContentData'
+import { TypeItem, ItemProducts } from './SecondContentData'
 import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai'
 import { VscZoomIn } from 'react-icons/vsc'
 import './SecondContent.scss'
 
-const data = [BestSellersData, FeaturedData, NewArrivalData, SpecialOfferData]
 export default function SecondContent() {
 
-
     const [current, setCurrent] = useState(0)
-    const length = data.length
 
     const bestSellers = () => {
         setCurrent(0)
@@ -37,34 +34,39 @@ export default function SecondContent() {
                     </div>
                 </div>
                 <div className='row'>
-                    {data[current].map((item, index) => {
-                        return (
-                            <div className='list-item col-12 col-sm-6 col-md-4 col-lg-3' key={index}>
-                                <div className='item'>
-                                    <div className='image'>
-                                        <img src={item.image} alt={item.alt} />
-                                        <p className='sale-off'>{item.saleoff}</p>
-                                        <div className='overplay'></div>
-                                        <div className='icons'>
-                                            <AiOutlineShoppingCart className='icon' />
-                                            <VscZoomIn className='icon' />
-                                            <AiOutlineHeart className='icon' />
+                    {TypeItem[current].related.map((id) => (
+                        <>
+                            {ItemProducts.map((item, index) => {
+                                return (
+                                    item.id === id &&
+                                    <div className='list-item col-12 col-sm-6 col-md-4 col-lg-3' key={index}>
+                                        <div className='item'>
+                                            <div className='image'>
+                                                <img src={item.image} alt={item.alt} />
+                                                <p className='sale-off'>{item.saleoff}</p>
+                                                <div className='overplay'></div>
+                                                <div className='icons'>
+                                                    <AiOutlineShoppingCart className='icon' />
+                                                    <VscZoomIn className='icon' />
+                                                    <AiOutlineHeart className='icon' />
+                                                </div>
+                                            </div>
+                                            <div className='item-info'>
+                                                <h4 className='name'>{item.name}</h4>
+                                                <span className='price'>{item.price}</span>
+                                                <span className='discount'>{item.discount}</span>
+                                                <br />
+                                                <div className='rating'>
+                                                    <span className='star' key={index}>{item.rating}</span>
+                                                    <span className='count'>{item.count}</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className='item-info'>
-                                        <h4 className='name'>{item.name}</h4>
-                                        <span className='price'>{item.price}</span>
-                                        <span className='discount'>{item.discount}</span>
-                                        <br />
-                                        <div className='rating'>
-                                            <span className='star' key={index}>{item.rating}</span>
-                                            <span className='count'>{item.count}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    })}
+                                )
+                            })}
+                        </>
+                    ))}
                 </div>
             </div>
         </div>

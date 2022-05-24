@@ -1,7 +1,4 @@
-$bg-color: #f7f8fb;
-$primary: #ff324d;
-$font-color: #333333;
-$bg-icons-color: #f0f0f0;
+@import '../../Root/Variable.scss';
 .second-content {
     background-color: $bg-color;
     padding: 100px 0px;
